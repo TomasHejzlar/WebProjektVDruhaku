@@ -70,7 +70,7 @@
     }
    
     .page__content{
-        max-width: 50em;
+        max-width: 60em;
         margin:auto
     }
 .page__intro{
@@ -128,6 +128,18 @@
     border: var(--primary) 2px solid;
 }
 
+.list >li{
+    margin:0.5em 0;
+}
 
+.list >li::marker{
+    color: var(--primary)
+}
+
+
+.panel{
+    max-width: 25em;
+    display:inline-block
+}
 
 }
