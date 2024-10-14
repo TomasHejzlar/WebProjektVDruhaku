@@ -29,16 +29,21 @@
         width: 2em;
         height: 1em;
         font-size: 1.5em;
-    }
-    .page__logo > span {
-        display: none;
-    }
+    
+        
+}
+
+.page__logo > span {
+    display: none;
 }
 
 /* VRSTVA PRO VAŠE STYLY */
 @layer design {
 
-
+.image-responsive{
+    display:block;
+    width: 100%;
+}
     .page__header{
         padding-left:calc(1em +5%);
         padding-bottom:calc(1em +5%);
@@ -46,8 +51,18 @@
         background-size: cover;
         background-position: top center;
         color: var(--light);
+        padding-left: 10em;
+        padding-top: 30em;
+        padding-bottom: 10em;
     }
-    
+}
+.page__logo{
+    content: "";
+    display: block;
+    background: center / contain no-repeat;
+    background-image: ("../images/logo.svg");
+    width: "auto"
+}
 
     .image-responsive{
         display:block;
@@ -60,6 +75,57 @@
     }
 .page__intro{
     max-width: 50em;
+}
+
+
+.button{
+    display: inline-block;
+    padding:0.5em 1em;
+    text-decoration: none;
+    border-radius: 0.25em;
+}
+
+.button--secondary{
+    background-color: var(--light);
+    color: var(--black)
+}
+.button--secondary:hover{
+    background-color: var(--gray);
+    color: var(--light)
+}
+
+.button--primary{
+    background-color: var(--light);
+    color: var(--black)
+}
+.button--primary:hover{
+    background-color: var(--light);
+    color: var(--black)
+}
+
+.picture-box{
+    margin:1em 0;
+}
+
+.picture-box__caption{
+    margin:1em 0;
+    font-size: 0.8em;
+    text-align: center;
+}
+
+
+.h3{
+    font-size: 1.1em;
+    font-weight: bold;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+
+}
+.highlight-box{
+    padding: 2em;
+    border: var(--primary) 2px solid;
 }
 
 
