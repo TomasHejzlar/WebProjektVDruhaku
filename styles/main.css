@@ -45,15 +45,13 @@
     width: 100%;
 }
     .page__header{
-        padding-left:calc(1em +5%);
-        padding-bottom:calc(1em +5%);
+        padding-left:calc(1em + 5%);
+        padding-bottom:calc(1em + 5%);
         background-image: url(../images/header-2560w.webp);
         background-size: cover;
         background-position: top center;
         color: var(--light);
-        padding-left: 10em;
         padding-top: 30em;
-        padding-bottom: 10em;
     }
 }
 .page__logo{
@@ -71,7 +69,8 @@
    
     .page__content{
         max-width: 60em;
-        margin:auto
+        margin:auto;
+        padding: 1em;
     }
 .page__intro{
     max-width: 50em;
@@ -139,7 +138,15 @@
 
 .panel{
     max-width: 25em;
-    display:inline-block
+    display:inline-block;
+    vertical-align: 100%;
+
 }
 
+
+
+
+.page__section{
+    padding: 1em;
+}
 }
